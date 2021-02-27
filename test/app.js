@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 const model = require('../models/models')
+const port = process.env.PORT || 3000
 
 mongoose.connect('mongodb+srv://usaravi9935:UsaRavi2017@cluster0.hgfnn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true,
@@ -37,7 +38,7 @@ app.post('/product', async (req,res) => {
 })
 
 
-app.listen(3000)
+app.listen(port)
 
 
 
