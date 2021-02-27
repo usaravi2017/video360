@@ -29,7 +29,7 @@ app.post('/product', async (req,res) => {
             email: req.body.email
         })
         const registerd = await a.save();
-        res.send(201).render(index);
+        res.redirect('https://jvz6.com/c/1002847/361874')
     }
     catch (error) {
         res.status(400).send(error)

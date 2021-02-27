@@ -5,12 +5,12 @@
 }
 
 .container{
-    width: 100%;
+    max-width: 1400px;
     height: 100vh;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    background: #f2f3f7;
+    background: #f2f3f7
 }
 
 .logo{
@@ -24,6 +24,7 @@
 
 .logo img{
     margin-right: 8px;
+    width: 70%;
 }
 
 .image{
@@ -89,4 +90,37 @@ input{
 
 #button:hover{
     padding: 10px 35px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .image{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    img{
+        width: 85%;
+        height: 85%;
+    }
+    .form{
+        display: block;
+        position: absolute;
+        margin-top: 180px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-top: 650px;
+    }
+    .container{
+        height: 100vh;
+        background: #f2f3f7;
+    }
+    body{
+        background: #f2f3f7;
+    }
 }
